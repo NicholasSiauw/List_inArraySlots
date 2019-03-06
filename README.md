@@ -6,9 +6,8 @@ By @Nicholas Siauw and @Zuwei Li
 ## Fields, constructor(s), and methods for the incipient List_inArraySlots class
 
 *Fields*
-- ElementIndex (ElementValue)
-- ReassignElement (OldElement,NewElementValue)
-- ListLength
+- int[] refArray
+- int filledElements
 
 *Methods*
 - AddElement
