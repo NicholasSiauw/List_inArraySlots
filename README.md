@@ -8,7 +8,7 @@ By @Nicholas Siauw and @Zuwei Li
 
 *Fields*
 - int[] refArray
-- int filledElements:count of the number of filled elements in the array list
+- int filledElements: count of the number of filled elements in the array list
 
 *Constructors*
 -constructor building an empty array list
@@ -18,9 +18,9 @@ By @Nicholas Siauw and @Zuwei Li
 - AddElement: add an element to a given position in the array list
 - RemoveElement: remove something from a given position in the array list
 - SwapElements (OldElement,NewELement) 
-- GetElement:get the element given a position
-- SetElement:set the element given a position
+- GetElement: get the element given a position
+- SetElement: set the element given a position
 - CountElement:count the number of times a given element appears
 
 ## UserOfList
--iterate through the Array List
+- iterate through the Array List
