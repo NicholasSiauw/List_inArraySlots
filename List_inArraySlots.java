@@ -6,15 +6,16 @@
 public class List_inArraySlots {
 
     // fields
-	int [] refArray;
-	private int filledElements = 0;    
+	private int [] refArray;
+	private int filledElements = 0;  
+	private static final int INITIAL_CAPACITY = 10;
 	
 	/**
       Construct an empty list with a small initial capacity.
      */
 	 
     public List_inArraySlots() {
-		refArray = int [10];
+		refArray = int [INITIAL_CAPACITY];
     }
 
 
@@ -46,16 +47,13 @@ public class List_inArraySlots {
       @return true, in keeping with conventions yet to be discussed
      */
       public boolean add( int value) {
-		  if (filledElements < refArray.length) {
-			  refArray[filledElements] = value;
-			  filledElements ++;
-			  return true;
-		  }
-		  else{
-			  expand();
-			  add(value);
-			  return false;
-      }
+         // expand if necessary
+         if( filledElements == elements.length) 
+	 expand();
+         refArray[ filledElements] = value;
+         filledElements++;
+        return true;
+}
 
 
     /** 
