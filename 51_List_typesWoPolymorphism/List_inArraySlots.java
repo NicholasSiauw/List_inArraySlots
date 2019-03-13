@@ -80,7 +80,7 @@ public class List_inArraySlots {
 				if (type == 1)
 					typeOfElements[filledElements] = 1;
 					doubleElements[filledElements] = doubleValue;
-				if (type == 0)
+				if (type == 2)
 					typeOfElements[filledElements] = 2;
 					stringElements[filledElements] = stringValue;
 					return true;
